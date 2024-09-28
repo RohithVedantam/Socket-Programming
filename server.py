@@ -16,7 +16,7 @@ def create_server():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # TCP/IP socket
     server_address = ('localhost', 8080)
     sock.bind(server_address)
-    sock.listen(20)  # listen for up to 20 incoming connections
+    sock.listen(25)  # listen for up to 25 incoming connections
     print(f'Server running on port {server_address[1]}...')
 
     while True:
